@@ -27,3 +27,10 @@ A histogram showing the distribution of x
 This function displays the distribution of a single numeric variable
 through a histogram
 }
+\examples{
+library(gapminder)
+histogram(gapminder, lifeExp)
+histogram(gapminder, lifeExp, xlab = "Life Expectancy")
+histogram(gapminder, gdpPercap, xlab = "GDP per capita", bins = 20)
+
+}
