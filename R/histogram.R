@@ -14,7 +14,11 @@
 #'
 #' @return  A histogram showing the distribution of x
 #'
-#'
+#' @examples
+#' library(gapminder)
+#' histogram(gapminder, lifeExp)
+#' histogram(gapminder, lifeExp, xlab = "Life Expectancy")
+#' histogram(gapminder, gdpPercap, xlab = "GDP per capita", bins = 20)
 #'
 #' @export
 histogram <- function(data, x, xlab = "x" , bins = 30, na.rm = TRUE){
