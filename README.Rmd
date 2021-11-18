@@ -1,30 +1,76 @@
 ---
-title: "README"
-author: "Catalina Gonzalez"
-date: "11/17/2021"
-output: html_document
+output: github_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```{r upload libraries, echo=FALSE, message=FALSE}
+library(devtools)
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+# graph
+
+
+The `graph` package was created to complete the [Assignment B-2](https://stat545.stat.ubc.ca/assignments/assignment-b2/), for the [STAT545b 2021 course](https://stat545.stat.ubc.ca/).
+
+
+## Overview
+
+`graph` is a package based in ggplot2 developed to facilitate the creation of histograms to explore the distribution variables. The function `histogram()` displays the distribution of a single numeric variable through a histogram.
+
+
+## Installation
+
+graph is not yet on CRAN. can install the package from GitHub using the following code:
+
+
+```{r, message=FALSE}
+devtools::install_github("cataralina/graph")
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## Usage
+
+The package have one function that displays the distribution of a single numeric variable
+through a histogram:
+
++ `histogram()`
+
+You start with `histogram()`, supply a dataset and the numeric variable to plot. Information about the xlab tittle, the number of bins and what to do with the NA is optional, but you can specify it using:
+
+
++ `xlab = "title"`    
++ `bins =` number of bins (defaults to **30**)    
++ `na.rm =` A logical vector indicating whether NA values should be stripped before the computation proceeds. **TRUE** is the default.
+
+
+## Example
+
+
+```{r Load packages}
+library(graph)
+library(gapminder)
+```
+
+```{r example}
+histogram(gapminder, lifeExp)
+```
+
+```{r}
+histogram(gapminder, lifeExp, xlab = "Life Expectancy")
+```
+
+```{r}
+histogram(gapminder, gdpPercap, xlab = "GDP per capita", bins = 20)
+```
+
