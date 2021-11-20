@@ -4,7 +4,7 @@
 #' through a histogram
 #'
 #' @param data Default data set that supplies the data to generate the plot
-#' @param x Column that contains a vector of numbers for plot
+#' @param x Column that contains a vector of numbers to plot
 #' @param xlab Text that will be used for the title of the x axis
 #' @param bins Specify the number of bins. Defaults to 30
 #' could change this value, exploring multiple numbers of bins to find the best to
@@ -14,6 +14,7 @@
 #'
 #' @return  A histogram showing the distribution of x
 #'
+#'
 #' @examples
 #' library(gapminder)
 #' histogram(gapminder, lifeExp)
@@ -22,6 +23,7 @@
 #'
 #' @export
 histogram <- function(data, x, xlab = "x" , bins = 30, na.rm = TRUE){
+  ..density.. <- NULL
   if(!is.numeric(eval(substitute(x), data))){# to make the function stop if the variable is not numeric
     stop("This function only works for numeric input!\n",
          "you have provided an object of class:", class(eval(substitute(x), data))[1])

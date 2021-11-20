@@ -9,7 +9,7 @@ histogram(data, x, xlab = "x", bins = 30, na.rm = TRUE)
 \arguments{
 \item{data}{Default data set that supplies the data to generate the plot}
 
-\item{x}{Column that contains a vector of numbers for plot}
+\item{x}{Column that contains a vector of numbers to plot}
 
 \item{xlab}{Text that will be used for the title of the x axis}
 
