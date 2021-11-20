@@ -1,9 +1,9 @@
 Package: graph
-Title: Generate a Histogram of a Single Numeric Variable
+Title: Visualization of the distribution of a single variable using histograms
 Version: 0.1.0
 Authors@R: 
     person("Catalina", "Gonzalez", , "cataralina@gmail.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: This function displays the distribution of a single numeric variable through a histogram
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
