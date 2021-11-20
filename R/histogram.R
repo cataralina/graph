@@ -1,6 +1,6 @@
-#' @title Visualization of the distribution of a single variable using histograms
+#' Visualization of the distribution of a single variable using histograms
 #'
-#' @description This function displays the distribution of a single numeric variable
+#' This function displays the distribution of a single numeric variable
 #' through a histogram
 #'
 #' @param data Default data set that supplies the data to generate the plot
