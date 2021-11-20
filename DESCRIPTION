@@ -3,7 +3,7 @@ Title: Visualization of the distribution of a single variable using histograms
 Version: 0.1.0
 Authors@R: 
     person("Catalina", "Gonzalez", , "cataralina@gmail.com", role = c("aut", "cre"))
-Description: This function displays the distribution of a single numeric variable
+Description: Contains a function that displays the distribution of a single numeric variable
     through a histogram.
 License: MIT + file LICENSE
 Encoding: UTF-8
