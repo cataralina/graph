@@ -9,7 +9,7 @@ B-2](https://stat545.stat.ubc.ca/assignments/assignment-b2/), for the
 
 ## Overview
 
-`graph` is a package based in ggplot2 developed to facilitate the
+`graph` is a package based on ggplot2 developed to facilitate the
 creation of histograms to explore the distribution of variables. The
 function `histogram()` displays the distribution of a single numeric
 variable through a histogram.
@@ -31,7 +31,7 @@ numeric variable through a histogram:
 -   `histogram()`
 
 You start with `histogram()`, and then supply a dataset and the numeric
-variable to plot. Information about the xlab tittle, the number of bins
+variable to plot. Information about the xlab title, the number of bins
 and what to do with the NA is optional, but you can specify it using:
 
 -   `xlab = "title"`  
