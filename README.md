@@ -10,14 +10,14 @@ B-2](https://stat545.stat.ubc.ca/assignments/assignment-b2/), for the
 ## Overview
 
 `graph` is a package based in ggplot2 developed to facilitate the
-creation of histograms to explore the distribution variables. The
+creation of histograms to explore the distribution of variables. The
 function `histogram()` displays the distribution of a single numeric
 variable through a histogram.
 
 ## Installation
 
-graph is not yet on CRAN. can install the package from GitHub using the
-following code:
+`graph` is not yet on CRAN, but you can install the package from GitHub
+using the following code:
 
 ``` r
 devtools::install_github("cataralina/graph")
@@ -30,9 +30,9 @@ numeric variable through a histogram:
 
 -   `histogram()`
 
-You start with `histogram()`, supply a dataset and the numeric variable
-to plot. Information about the xlab tittle, the number of bins and what
-to do with the NA is optional, but you can specify it using:
+You start with `histogram()`, and then supply a dataset and the numeric
+variable to plot. Information about the xlab tittle, the number of bins
+and what to do with the NA is optional, but you can specify it using:
 
 -   `xlab = "title"`  
 -   `bins =` number of bins (defaults to **30**)  
